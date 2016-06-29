@@ -8,6 +8,10 @@
    "target_path": "device/qcom/common"
  },
  {
+   "repository": "proprietary_vendor_oneplus",
+   "target_path": "vendor/oneplus"
+ },
+ {
    "repository": "android_kernel_oneplus_msm8996",
    "target_path": "kernel/oneplus/msm8996"
  },
