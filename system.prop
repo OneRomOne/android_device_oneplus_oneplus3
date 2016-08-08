@@ -24,7 +24,6 @@ audio.offload.multiple.enabled=true
 audio.offload.min.duration.secs=30
 af.fast_track_multiplier=2
 audio_hal.period_size=192
-persist.dirac.acs.controller=qem
 
 # Bluetooth
 bt.max.hfpclient.connections=1
@@ -32,13 +31,17 @@ qcom.bluetooth.soc=rome
 ro.bluetooth.wipower=true
 ro.bluetooth.emb_wp_mode=true
 
+# Camera
+persist.camera.imglib.fddsp=1
+persist.camera.llc=1
+persist.camera.llnoise=1
+
 # Display power reduction (FOSS)
 ro.qcom.dpps.sensortype=3
 ro.qualcomm.display.paneltype=1
 ro.qualcomm.foss=1
-
-# Camera
-camera.disable_zsl_mode=1
+config.foss.xml=1
+config.foss.path=/system/etc/FOSSConfig.xml
 
 # CNE
 persist.cne.feature=1
@@ -62,7 +65,7 @@ debug.egl.hw=1
 debug.gralloc.enable_fb_ubwc=1
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
-ro.opengles.version=196609
+ro.opengles.version=196610
 ro.sf.lcd_density=480
 persist.sys.wfd.virtual=0
 sdm.perf_hint_window=50
@@ -98,15 +101,12 @@ DEVICE_PROVISIONED=1
 persist.radio.multisim.config=dsds
 persist.volte_enalbed_by_hw=1
 persist.radio.data_ltd_sys_ind=1
-persist.radio.rat_on=combine
 ro.telephony.default_network=22,22
-telephony.lteOnCdmaDevice=1,1
+telephony.lteOnCdmaDevice=1
 ro.telephony.call_ring.multiple=false
-telephony.lteOnGsmDevice=1
 persist.radio.apm_sim_not_pwdn=1
 persist.radio.custom_ecc=1
 persist.radio.sib16_support=1
-ro.telephony.default_cdma_sub=0
 persist.data.qmi.adb_logmask=0
 persist.net.doxlat=true
 persist.oem.dump=0
@@ -125,9 +125,6 @@ persist.data.df.agg.dl_size=4096
 persist.data.df.mux_count=8
 persist.data.df.iwlan_mux=9
 persist.data.df.dev_name=rmnet_usb0
-
-# Storage
-ro.sdcardfs.enable=true
 
 # Timeservice
 persist.timed.enable=true
