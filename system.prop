@@ -22,8 +22,8 @@ audio.dolby.ds2.hardbypass=false
 audio.offload.passthrough=false
 audio.offload.multiple.enabled=true
 audio.offload.min.duration.secs=30
-af.fast_track_multiplier=2
-audio_hal.period_size=192
+af.fast_track_multiplier=1
+audio_hal.period_size=160
 
 # Bluetooth
 bt.max.hfpclient.connections=1
@@ -80,6 +80,7 @@ ro.am.reschedule_service=true
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.min_freq_0=307200
 ro.min_freq_2=307200
+ro.sys.fw.bg_apps_limit=60
 
 # QCOM
 ro.frp.pst=/dev/block/bootdevice/by-name/config
