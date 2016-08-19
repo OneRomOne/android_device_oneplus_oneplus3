@@ -96,6 +96,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Haters gonna hate..
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Alipay
+PRODUCT_PACKAGES += \
+    org.ifaa.android.manager
+
+PRODUCT_BOOT_JARS += \
+    org.ifaa.android.manager
+
 # Audio
 PRODUCT_PACKAGES += \
     audiod \
@@ -134,10 +141,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Snap \
     libcamera_shim
-
-# Charger
-PRODUCT_PACKAGES += \
-    charger_res_images
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
